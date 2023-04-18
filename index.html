@@ -48,7 +48,7 @@
     <div class="sldier overflow-hidden">
         <div class="bg-[url('img/slider1.png')] bg-contain bg-no-repeat h-screen w-full">
             <div class="w-3/5 mx-auto my-auto mt-52">
-                <h1 class="text-white text-7xl w-7/12">El mejor negocio de Outsourcing</h1>
+                <h1 class="text-white text-7xl w-7/12">El mejor negocio de <span class="text-yellow-500">Outsourcing</span></h1>
                 <h2 class="text-white text-2xl w-7/12 mt-6">Con nosotros tendras el mejor áre de reclutamiento, para tu empresa, puedes desjar de gestionar</h2>
                 <button class="mt-10 bg-teal-400 text-white px-8 py-4 text-xl rounded hover:bg-slate-900 hover:text-teal-200">Ver Mas</button>
             </div>
@@ -57,7 +57,7 @@
         </div>
         <div class="bg-[url('img/slider2.png')] bg-contain bg-no-repeat h-screen w-full">
             <div class="w-3/5 mx-auto my-auto mt-52">
-                <h1 class="text-white text-7xl w-7/12">El mejor negocio de Outsourcing</h1>
+                <h1 class="text-white text-7xl w-7/12">El mejor negocio de <span class="text-yellow-500">Hunting</span></h1>
                 <h2 class="text-white text-2xl w-7/12 mt-6">Con nosotros tendras el mejor áre de reclutamiento, para tu empresa, puedes desjar de gestionar</h2>
                 <button class="mt-10 bg-teal-400 text-white px-8 py-4 text-xl rounded hover:bg-slate-900 hover:text-teal-200">Ver Mas</button>
             </div>
@@ -172,11 +172,11 @@
     $(document).ready(function(){
         $('.sldier').slick({
             autoplay:true,
-            autoplaySpeed:3000,
+            autoplaySpeed:4000,
             pauseOnFocus:false,
             infinite: true,
             speed: 500,
-            fade: true,
+            fade: false,
             cssEase: 'linear'
         });
 
