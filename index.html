@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        body{
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        h1{
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: bold;
+            font-weight: 900;
+        }  
+        
+    </style>
+
+</head>
+<body>
+    
+    <header class="w-full h-28 z-40 bg-orange-500">
+        <div class="flex justify-around items-center py-6">
+            <div class="flex">
+                <img src="img/logo_white.svg" alt="" width="170">
+            </div>
+            <div class="flex">
+                <nav>
+                    <ul class="flex divide-x text-white">
+                        <li class="px-6 py-4 hover:bg-orange-600 rounded-xl">Nosotros</li>
+                        <li class="px-6 py-4 hover:bg-orange-600 rounded-xl">Servicios</li>
+                        <li class="px-6 py-4 hover:bg-orange-600 rounded-xl">Clientes</li>
+                        <li class="px-6 py-4 hover:bg-orange-600 rounded-xl">Contactenos</li>
+                    </ul>
+                </nav>  
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="sldier overflow-hidden">
+        <div class="bg-[url('img/slider1.png')] bg-contain bg-no-repeat h-screen w-full">
+            <div class="w-3/5 mx-auto my-auto mt-52">
+                <h1 class="text-white text-7xl w-7/12">El mejor negocio de Outsourcing</h1>
+                <h2 class="text-white text-2xl w-7/12 mt-6">Con nosotros tendras el mejor áre de reclutamiento, para tu empresa, puedes desjar de gestionar</h2>
+                <button class="mt-10 bg-orange-500 text-white px-8 py-4 text-xl rounded">Ver Mas</button>
+            </div>
+            
+            
+        </div>
+        <div class="bg-[url('img/slider2.png')] bg-contain bg-no-repeat h-screen w-full">
+            <div class="w-3/5 mx-auto my-auto mt-52">
+                <h1 class="text-white text-7xl w-7/12">El mejor negocio de Outsourcing</h1>
+                <h2 class="text-white text-2xl w-7/12 mt-6">Con nosotros tendras el mejor áre de reclutamiento, para tu empresa, puedes desjar de gestionar</h2>
+                <button class="mt-10 bg-orange-500 text-white px-8 py-4 text-xl rounded">Ver Mas</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-10">
+ 
+        <div class="drop-shadow-xl text-center px-6 py-10 rounded-2xl bg-white">
+            <img src="img/icono1.svg" alt="" width="80" class="mx-auto">
+            <h3 class="text-2xl my-4">Objetivos</h3>
+            <p class="w-3/4 mx-auto">Lorem Ipsum is simply dummy text of and typesetting industry.</p>
+        </div>
+
+        <div class="drop-shadow-xl text-center px-6 py-10 rounded-2xl bg-white">
+            <img src="img/icono2.svg" alt="" width="80" class="mx-auto">
+            <h3 class="text-2xl my-4">Perfiles Principales</h3>
+            <p class="w-3/4 mx-auto">Lorem Ipsum is simply dummy text of and typesetting industry.</p>
+        </div>
+
+        <div class="drop-shadow-xl text-center px-6 py-10 rounded-2xl bg-white">
+            <img src="img/icono3.svg" alt="" width="80" class="mx-auto">
+            <h3 class="text-2xl my-4">Factores Diferenciales</h3>
+            <p class="w-3/4 mx-auto">Lorem Ipsum is simply dummy text of and typesetting industry.</p>
+        </div>
+ 
+    </div>
+
+    <div class="logos w-9/12 mx-auto mt-10">
+            <div class="px-2 py-4"><img src="img/clientes/logo1.png" alt="" width="160"></div>
+            <div class="px-2 py-4"><img src="img/clientes/logo2.png" alt="" width="160"></div>
+            <div class="px-2 py-4"><img src="img/clientes/logo3.png" alt="" width="160"></div>
+            <div class="px-2 py-4"><img src="img/clientes/logo4.png" alt="" width="160"></div>
+            <div class="px-2 py-4"><img src="img/clientes/logo5.png" alt="" width="160"></div>
+            <div class="px-2 py-4"><img src="img/clientes/logo6.png" alt="" width="160"></div>    
+    </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.sldier').slick({
+            autoplay:true,
+            autoplaySpeed:3000,
+            pauseOnFocus:false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+
+        $('.logos').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+        
+    });
+</script>
+
+</body>
+</html>
