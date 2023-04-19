@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -12,6 +13,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
         
         body{
             font-family: 'Fira Sans', sans-serif;
@@ -27,12 +30,16 @@
             font-family: 'Roboto', sans-serif;
             font-weight: 900;
         }
+
+        .slogan{
+            font-family: 'Dancing Script', cursive;
+        }
         
     </style>
 
 </head>
 <body>
-    
+
     <header class="w-full h-28 z-40 bg-slate-900">
         <div class="flex justify-around items-center py-6">
             <div class="flex">
@@ -52,25 +59,47 @@
         
     </header>
 
-    <div class="sldier overflow-hidden">
-        <div class="bg-[url('img/slider1.png')] bg-contain bg-no-repeat h-screen w-full">
-            <div class="w-3/5 mx-auto my-auto mt-52">
-                <h1 class="text-white text-7xl w-7/12">El mejor negocio de <span class="text-yellow-500">Outsourcing</span></h1>
-                <h2 class="text-white text-2xl w-7/12 mt-6">Con nosotros tendras el mejor áre de reclutamiento, para tu empresa, puedes desjar de gestionar</h2>
-                <button class="mt-10 bg-teal-400 text-white px-8 py-4 text-xl rounded hover:bg-slate-900 hover:text-teal-200">Ver Mas</button>
-            </div>
-            
-            
-        </div>
-        <div class="bg-[url('img/slider2.png')] bg-contain bg-no-repeat h-screen w-full">
-            <div class="w-3/5 mx-auto my-auto mt-52">
-                <h1 class="text-white text-7xl w-7/12">El mejor negocio de <span class="text-yellow-500">Hunting</span></h1>
-                <h2 class="text-white text-2xl w-7/12 mt-6">Con nosotros tendras el mejor áre de reclutamiento, para tu empresa, puedes desjar de gestionar</h2>
-                <button class="mt-10 bg-teal-400 text-white px-8 py-4 text-xl rounded hover:bg-slate-900 hover:text-teal-200">Ver Mas</button>
-            </div>
-        </div>
+    <div class="bg-[url('img/nosotros_banner.png')] bg-cover bg-no-repeat bg-center h-64 w-full">
+
+    </div>
+    <div class="w-3/5 mx-auto mt-12">
+        <h2 class="text-4xl my-10 text-teal-500 ">Nosotros</h2>
+        <p class="slogan text-3xl text-teal-500">
+            Las Mejores oportunidades para los mejores talendos
+        </p>
+        <h2 class="text-2xl my-4 mt-4 text-teal-500 ">Misión</h2>
+        <p class="text-xl">
+            Somos una empresa comprometida con garantizar un crecimiento para neustros clientes de la mano de nuestro talento humano
+        </p>
+
+        <h2 class="text-2xl my-4 mt-4 text-teal-500 ">Visión</h2>
+        <p class="text-xl">
+            Ser la empresa referente de LATAM en la coexión entre talento y oportunidades laborales, potenciando el rendimiento de nuestros clientes
+        </p>
+
+        <h2 class="text-2xl my-4 mt-4 text-teal-500 ">Porpósito</h2>
+        <p class="text-xl">
+            Generar las mejores oportunidades de nuestro crecimiento para nuestros clientes y nuestros talentos
+        </p>
     </div>
 
+
+    <!-- Section Ours Clientes -->
+    <div class="bg-slate-200 w-full p-6 my-20">
+        <div class="text-center">
+            <h2 class="text-center text-4xl mt-10 text-teal-500 ">Ellos confian en nosotros</h2>
+            <p>We are privileged to work with hundred of thinkIt stablished fact that are will be distracted...</p>
+        </div>
+        <div class="logos w-9/12 mx-auto mt-10">
+                <div class="px-2 py-4"><img src="img/clientes/logo1.png" alt="" width="160"></div>
+                <div class="px-2 py-4"><img src="img/clientes/logo2.png" alt="" width="160"></div>
+                <div class="px-2 py-4"><img src="img/clientes/logo3.png" alt="" width="160"></div>
+                <div class="px-2 py-4"><img src="img/clientes/logo4.png" alt="" width="160"></div>
+                <div class="px-2 py-4"><img src="img/clientes/logo5.png" alt="" width="160"></div>
+                <div class="px-2 py-4"><img src="img/clientes/logo6.png" alt="" width="160"></div>    
+                <div class="px-2 py-4"><img src="img/clientes/logo7.png" alt="" width="160"></div>
+        </div>
+    </div>
 
     <!-- Section Ours Servicios -->
     <h2 class="text-center text-4xl my-10 text-teal-500 ">Agenda</h2>
@@ -96,80 +125,10 @@
  
     </div>
 
-    <!-- Section Ours Clientes -->
-    <div class="bg-slate-200 w-full p-6 my-20">
-        <div class="text-center">
-            <h2 class="text-center text-4xl mt-10 text-teal-500 ">Ellos confian en nosotros</h2>
-            <p>We are privileged to work with hundred of thinkIt stablished fact that are will be distracted...</p>
-        </div>
-        <div class="logos w-9/12 mx-auto mt-10">
-                <div class="px-2 py-4"><img src="img/clientes/logo1.png" alt="" width="160"></div>
-                <div class="px-2 py-4"><img src="img/clientes/logo2.png" alt="" width="160"></div>
-                <div class="px-2 py-4"><img src="img/clientes/logo3.png" alt="" width="160"></div>
-                <div class="px-2 py-4"><img src="img/clientes/logo4.png" alt="" width="160"></div>
-                <div class="px-2 py-4"><img src="img/clientes/logo5.png" alt="" width="160"></div>
-                <div class="px-2 py-4"><img src="img/clientes/logo6.png" alt="" width="160"></div>    
-                <div class="px-2 py-4"><img src="img/clientes/logo7.png" alt="" width="160"></div>
-        </div>
-    </div>
+    
     
 
-    <!-- Section Ours Servcios -->
-    <div>
-        <div class="text-center">
-            <h2 class="text-center text-4xl mt-10 text-teal-500">Nuestro Servicios</h2>
-            <p>We are privileged to work with hundred of thinkIt stablished fact that are will be distracted...</p>
-
-        </div>
-
-        <div class="grid grid-cols-2 gap-10 w-9/12 mx-auto mt-10">
- 
-            <div class="bg-[url('img/servicio1.png')] bg-contain bg-no-repeat w-full items-end h-96 text-center">
-                <h2 class="robotoBold mt-24 text-4xl text-teal-500">Servicios de</h2>
-                <h3 class="robotoBold text-6xl text-white">Outsourcing</h3>
-                <button class="mt-10 bg-teal-400 text-white px-8 py-4 text-xl rounded hover:bg-slate-900 hover:text-teal-200">Ver Mas</button>
-            </div>
-
-            <div class="bg-[url('img/servicio2.png')] bg-contain bg-no-repeat w-full items-end h-96 text-center">
-                <h2 class="robotoBold mt-24 text-4xl text-teal-500">Servicios de</h2>
-                <h3 class="robotoBold text-6xl text-white">Hunter</h3>
-                <button class="mt-10 bg-teal-400 text-white px-8 py-4 text-xl rounded hover:bg-slate-900 hover:text-teal-200">Ver Mas</button>
-            </div>
-
-
-        </div> 
-    </div>
-
-    <!-- Section Ours Equipo -->
-    <div>
-        <div class="text-center">
-            <h2 class="text-center text-4xl mt-10 text-teal-500">Nuestro Equipo</h2>
-            <p>We are privileged to work with hundred of thinkIt stablished fact that are will be distracted...</p>
-        </div>
-
-        <div class="grid grid-cols-3 gap-10 w-9/12 mx-auto mt-10">
- 
-            <div class="bg-[url('img/personal/persona1.png')] bg-cover bg-no-repeat w-full flex items-end bg-yellow-300 h-96">
-                <div class="footerPersoanl bg-slate-700 w-full h-20 mb-0 opacity-80 flex items-center justify-center">
-                    <h3 class="text-white text-2xl">Santiago Mezarina</h3>
-                </div>
-            </div>
-
-            <div class="bg-[url('img/personal/persona2.png')] bg-cover bg-no-repeat w-full flex items-end bg-yellow-300">
-                <div class="footerPersoanl bg-slate-700 w-full h-20 mb-0 opacity-80 flex items-center justify-center">
-                    <h3 class="text-white text-2xl">Antuhanet Izquierdo</h3>
-                </div>
-            </div>
-
-            <div class="bg-[url('img/personal/persona3.png')] bg-cover bg-no-repeat w-full flex items-end bg-yellow-300">
-                <div class="footerPersoanl bg-slate-700 w-full h-20 mb-0 opacity-80 flex items-center justify-center">
-                    <h3 class="text-white text-2xl">Valeria Mezanira</h3>
-                </div>
-            </div>
-
-
-        </div> 
-    </div>
+    
 
     <footer class="w-full mt-20 flex bg-[url('img/fondo_footer.png')] bg-cover text-white">
         
