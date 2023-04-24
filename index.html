@@ -33,14 +33,14 @@
 </head>
 <body>
     
-    <header class="w-full h-28 z-40 bg-slate-900">
-        <div class="flex justify-around items-center py-6">
-            <div class="flex">
+    <header class="w-full z-40 bg-slate-900 h-14 md:h-28">
+        <div class="flex md:justify-around items-center p-0 md:py-6 p-2 ml-4">
+            <div class="flex w-20 md:w-60">
                 <a href="index.html"><img src="img/logo_esmeralda.svg" alt="" width="170"></a>
             </div>
-            <div class="flex">
-                <nav>
-                    <ul class="flex divide-x text-white">
+            <div class="flex bg-orange-500 md:bg-slate-900 mt-10 z-40 md:mt-0">
+                <nav class="hidden md:block">
+                    <ul class="flex flex-col md:flex-row divide-x text-white">
                         <li class="px-6 py-4 hover:bg-teal-200 hover:text-slate-900"><a href="nosotros.html">Nosotros</a> </li>
                         <li class="px-6 py-4 hover:bg-teal-200 hover:text-slate-900"><a href="servicios.html">Servicios</a> </li>
                         <li class="px-6 py-4 hover:bg-teal-200 hover:text-slate-900"><a href="clientens.html">Clientes</a> </li>
@@ -49,23 +49,24 @@
                 </nav>  
             </div>
         </div>
-        
     </header>
 
-    <div class="sldier overflow-hidden">
-        <div class="bg-[url('img/slider1.png')] bg-contain bg-no-repeat h-screen w-full">
-            <div class="w-3/5 mx-auto my-auto mt-52">
-                <h1 class="text-white text-7xl w-7/12">El mejor negocio de <span class="text-yellow-500">Outsourcing</span></h1>
-                <h2 class="text-white text-2xl w-7/12 mt-6">Con nosotros tendras el mejor áre de reclutamiento, para tu empresa, puedes desjar de gestionar</h2>
+    <div class="sldier">
+        <div class="bg-[url('img/slider1.png')] bg-cover bg-center bg-no-repeat h-1/6 md:h-screen md:w-full p-6">
+            <div class="w-full sm:w-3/5 mx-auto my-auto mt-32 sm:mt-52">
+                <h1 class="text-white text-4xl md:text-7xl w-full md:w-8/12">IDM HEADHUNTING</h1>
+                <h2 class="text-white text-2xl sm:text-4xl w-full md:w-8/12 mt-6 text-yellow-500">Talento clave de primera en tiempo record.</h2>
                 <button class="mt-10 bg-teal-400 text-white px-8 py-4 text-xl rounded hover:bg-slate-900 hover:text-teal-200">Ver Mas</button>
             </div>
             
             
         </div>
-        <div class="bg-[url('img/slider2.png')] bg-contain bg-no-repeat h-screen w-full">
-            <div class="w-3/5 mx-auto my-auto mt-52">
-                <h1 class="text-white text-7xl w-7/12">El mejor negocio de <span class="text-yellow-500">Hunting</span></h1>
-                <h2 class="text-white text-2xl w-7/12 mt-6">Con nosotros tendras el mejor áre de reclutamiento, para tu empresa, puedes desjar de gestionar</h2>
+        <div class="bg-[url('img/slider2.png')] bg-cover bg-center bg-no-repeat h-1/6 md:h-screen md:w-full p-6">
+            <div class="w-full sm:w-3/5 mx-auto my-auto mt-32 sm:mt-52">
+                <h1 class="text-white text-4xl md:text-7xl w-full md:w-8/12">IDM OUTSOURCING</h1>
+                <h2 class="text-white text-2xl sm:text-4xl w-full md:w-8/12 mt-6 text-yellow-500">Delega con confianza, enfócate en tu negocio.
+
+                </h2>
                 <button class="mt-10 bg-teal-400 text-white px-8 py-4 text-xl rounded hover:bg-slate-900 hover:text-teal-200">Ver Mas</button>
             </div>
         </div>
@@ -74,7 +75,7 @@
 
     <!-- Section Ours Servicios -->
     <h2 class="text-center text-4xl my-10 text-teal-500 ">Agenda</h2>
-    <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-10">
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-4 w-9/12 mx-auto mt-10">
  
         <div class="drop-shadow-xl text-center px-6 py-10 rounded-2xl bg-white">
             <img src="img/icono1.svg" alt="" width="80" class="mx-auto">
@@ -122,7 +123,7 @@
 
         </div>
 
-        <div class="grid grid-cols-2 gap-10 w-9/12 mx-auto mt-10">
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-10 w-9/12 mx-auto mt-10">
  
             <div class="bg-[url('img/servicio1.png')] bg-contain bg-no-repeat w-full items-end h-96 text-center">
                 <h2 class="robotoBold mt-24 text-4xl text-teal-500">Servicios de</h2>
@@ -147,7 +148,7 @@
             <p>We are privileged to work with hundred of thinkIt stablished fact that are will be distracted...</p>
         </div>
 
-        <div class="grid grid-cols-3 gap-10 w-9/12 mx-auto mt-10">
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-10 w-9/12 mx-auto mt-10">
  
             <div class="bg-[url('img/personal/persona1.png')] bg-cover bg-no-repeat w-full flex items-end bg-yellow-300 h-96">
                 <div class="footerPersoanl bg-slate-700 w-full h-20 mb-0 opacity-80 flex items-center justify-center">
@@ -225,7 +226,9 @@
             infinite: true,
             speed: 500,
             fade: false,
-            cssEase: 'linear'
+            cssEase: 'linear',
+            arrows:false,
+            scroll:false,
         });
 
         $('.logos').slick({
